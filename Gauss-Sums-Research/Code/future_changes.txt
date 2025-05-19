@@ -1,3 +1,0 @@
-Find an example of the form q=1+2l^j that does not have counterexamples
-
-Find as many counter examples to the conjecture as you can. Investigate their structure. See if you can identify pattern to find more counter examples without having to use brute force.
