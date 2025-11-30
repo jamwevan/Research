@@ -1,0 +1,2 @@
+n_obs,resid_corr,sd_y,sd_x,implied_beta,wedge_variance_ratio,adjR2_y_on_ctrls,adjR2_x_on_ctrls,y_level_col,x_level_col,controls_level_cols,transforms
+3451,-0.031035572953950836,0.0038610899505552233,0.05529788848843352,-0.002167011112319194,1.0092093379061726,0.7367389945260354,0.003072960543912817,SPXT Index,BTC_USD,BCOM Index; USTWBGD  Index; VIX Index; USGG10YR Index; USGG1M Index,SPXT Index->nlc; BTC_USD->nlc; BCOM Index->chg; USTWBGD  Index->chg; VIX Index->chg; USGG10YR Index->chg; USGG1M Index->chg
