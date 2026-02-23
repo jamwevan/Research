@@ -1,0 +1,17 @@
+\begin{table}[!htbp]\centering
+\caption{Regime-conditional local projections: JPY basis (5Y)}
+\label{tab:lp_jpy_5y}
+\begin{tabular}{lccccccccc}
+\toprule
+Horizon $h$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+\midrule
+$\Delta D_t \times \mathbf{1}\{D_t \le D_\tau\}$ & -0.014 & -0.660*** & -0.643*** & 0.032 & -0.157 & 0.165 & -0.189 & -0.159 & 0.145 \\
+  & (0.022) & (0.232) & (0.205) & (0.220) & (0.190) & (0.171) & (0.219) & (0.188) & (0.215) \\
+$\Delta D_t \times \mathbf{1}\{D_t > D_\tau\}$ & -1.317** & 0.694 & -0.360 & -0.250 & -0.037 & -0.352 & 0.175 & 0.097 & -0.515** \\
+  & (0.651) & (0.523) & (0.386) & (0.270) & (0.261) & (0.229) & (0.237) & (0.187) & (0.263) \\
+\midrule
+Observations & 886 & 886 & 885 & 884 & 883 & 882 & 881 & 880 & 879 \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}\footnotesize Notes: Each column reports the coefficient from a separate local projection at horizon $h=0,\dots,8$. Dependent variable is the non-cumulative change $\Delta x_{t+h}:=x_{t+h}-x_{t+h-1}$ for the 5Y basis. Regressors include $\Delta D_t$ interacted with dollar regimes, and controls ($\Delta$VIX, $\Delta$IV, $\Delta$RR, $\Delta$YS, $\Delta$TS). Standard errors are Newey--West (HAC) with lag $h+1$. $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.\end{flushleft}
+\end{table}
