@@ -20,7 +20,7 @@ The program prompts for a prime ℓ and a prime power q, then prints:
 
 ## Output
 
-The `output/` folder contains the raw console output for every (ℓ, q) pair
+The `Output/` folder contains the raw console output for every (ℓ, q) pair
 reported in the paper.
 
 ## Notes
