@@ -1,0 +1,33 @@
+(base) jamwevan@Mac Codebase % sage converse_theorem.sage
+SageMath SageMath version 10.5, Release Date: 2024-12-04
+Enter a prime l: 3
+Enter a prime power q: 487
+Traceback (most recent call last):
+  File "/Users/jamwevan/Dropbox/Education/Research/Undergraduate Research/LoG(M)/Gauss Sums/Codebase/converse_theorem.sage.py", line 183, in <module>
+    gauss_sum_table_object = fL_bar_gauss_sum_table(q, l)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jamwevan/Dropbox/Education/Research/Undergraduate Research/LoG(M)/Gauss Sums/Codebase/converse_theorem.sage.py", line 166, in fL_bar_gauss_sum_table
+    F = GF(l**c)
+        ^^^^^^^^
+  File "sage/structure/factory.pyx", line 371, in sage.structure.factory.UniqueFactory.__call__ (build/cythonized/sage/structure/factory.c:4178)
+  File "/private/var/tmp/sage-10.5-current/local/var/lib/sage/venv-python3.12.5/lib/python3.12/site-packages/sage/rings/finite_rings/finite_field_constructor.py", line 623, in create_key_and_extra_args
+    modulus = Fpbar._get_polynomial(n)
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/tmp/sage-10.5-current/local/var/lib/sage/venv-python3.12.5/lib/python3.12/site-packages/sage/rings/algebraic_closure_finite_field.py", line 1091, in _get_polynomial
+    return self._pseudo_conway_lattice.polynomial(n)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/tmp/sage-10.5-current/local/var/lib/sage/venv-python3.12.5/lib/python3.12/site-packages/sage/rings/finite_rings/conway_polynomials.py", line 242, in polynomial
+    xi = {q: self.polynomial(n//q).any_root(K, n//q, assume_squarefree=True, assume_equal_deg=True)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/tmp/sage-10.5-current/local/var/lib/sage/venv-python3.12.5/lib/python3.12/site-packages/sage/rings/finite_rings/conway_polynomials.py", line 242, in polynomial
+    xi = {q: self.polynomial(n//q).any_root(K, n//q, assume_squarefree=True, assume_equal_deg=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "sage/rings/polynomial/polynomial_element.pyx", line 2693, in sage.rings.polynomial.polynomial_element.Polynomial.any_root (build/cythonized/sage/rings/polynomial/polynomial_element.c:36683)
+  File "sage/rings/polynomial/polynomial_element.pyx", line 8986, in sage.rings.polynomial.polynomial_element.Polynomial.roots (build/cythonized/sage/rings/polynomial/polynomial_element.c:88541)
+  File "sage/rings/polynomial/polynomial_element.pyx", line 9000, in sage.rings.polynomial.polynomial_element.Polynomial.roots (build/cythonized/sage/rings/polynomial/polynomial_element.c:88841)
+  File "sage/rings/polynomial/polynomial_element.pyx", line 5025, in sage.rings.polynomial.polynomial_element.Polynomial.factor (build/cythonized/sage/rings/polynomial/polynomial_element.c:52649)
+  File "cypari2/gen.pyx", line 4362, in cypari2.gen.Gen.factor
+  File "cypari2/handle_error.pyx", line 211, in cypari2.handle_error._pari_err_handle
+cypari2.handle_error.PariError: the PARI stack overflows (current size: 1073741824; maximum size: 1073741824)
+You can use pari.allocatemem() to change the stack size and try again
+(base) jamwevan@Mac Codebase % 
